@@ -29,7 +29,7 @@ public class Utilities {
     public static String dirPath;
     public static WebDriver getDriver(){
             dirPath = System.getProperty("user.dir");
-            System.setProperty("webdriver.chrome.driver", dirPath + "/src/main/resources/linux/chromedriver");
+            System.setProperty("webdriver.chrome.driver", dirPath + "/src/main/resources/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.addExtensions(new File(dirPath + "/src/main/resources/extension_3_0_3_0.crx"));
             DesiredCapabilities capabilities = new DesiredCapabilities();
